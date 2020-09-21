@@ -1,0 +1,58 @@
+<!-- <div>
+    <nav>
+        <a routerLink='' routerLinkActive="active">Home</a>
+    </nav>
+</div> -->
+
+<!-- <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link " routerLink='' routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink='ruta-juegos' routerLinkActive="active">Juegos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="ruta-about" routerLinkActive="active">About</a>
+    </li>
+  </ul> -->
+
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" style="background-image: url('https://image.freepik.com/foto-gratis/fondo-o-textura-madera-clara-pared-fondo-madera-patron-natural_256259-128.jpg');" >
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" routerLink=''  role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" routerLink='ruta-juegos' role="tab" aria-controls="pills-profile" aria-selected="false">Juegos</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="ruta-resultados" role="tab" aria-controls="pills-contact" aria-selected="false">Resultados</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="ruta-adivinaElNumero" role="tab" aria-controls="pills-contact" aria-selected="false">Adivina</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" routerLink="ruta-about" role="tab" aria-controls="pills-contact" aria-selected="false">About</a>
+    </li>
+    
+
+    
+  </ul>
+  <!-- <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">dqdqdqdqwd</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">3245234324324234</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">nsdfndsnfjksdfnhuirwruimkljsdnfjkndsajfnsd88458923hfsdjoiknfjuiksd Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perferendis voluptatibus repellat dolore accusamus nesciunt sequi, consequuntur nulla voluptate aliquid. Maxime, ea dolorum exercitationem eos quo obcaecati rerum quas et.</div>
+  </div> -->
+  
+
+
+  <div class="container h-100">
+    <div class="row justify-content-center h-100">
+        <div class="col-sm-8 align-self-center text-center">
+            <div class="card shadow">
+                <div class="card-body">           
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+ 
