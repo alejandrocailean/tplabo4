@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/Servicios/Data-service/data.service';
 
 @Component({
   selector: 'app-ruta-juegos',
@@ -8,32 +7,8 @@ import { DataService } from 'src/app/Servicios/Data-service/data.service';
 })
 export class RutaJuegosComponent implements OnInit {
 
+    constructor() { }
+
+  ngOnInit(): void {}
   
-  countries;
-  constructor(
-    private data:DataService
-  ) { }
-
-  ngOnInit(): void {
-
-    this.data.setDatos({name:'pepe'});
-     this.data.getCountries()
-    .subscribe(paises=>{
-      this.countries=paises;
-      console.log(paises);
-    });  
-    
-   
-  }
-
-  verDetalles(e){
-    console.log('Nombre: '+e.name+' Region: '+e.region);
-    
-  }
-
-
-
-  
-  
-
 }
